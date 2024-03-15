@@ -18,6 +18,8 @@
 		CE6F4FCA2BA29065004ACA67 /* BarcodeScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6F4FC92BA29065004ACA67 /* BarcodeScannerView.swift */; };
 		CE6F4FCC2BA29465004ACA67 /* ScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6F4FCB2BA29465004ACA67 /* ScannerVC.swift */; };
 		CE6F4FCE2BA2E6F8004ACA67 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6F4FCD2BA2E6F8004ACA67 /* ScannerView.swift */; };
+		CE6F4FD22BA3F653004ACA67 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6F4FD12BA3F652004ACA67 /* Alert.swift */; };
+		CE6F4FD42BA3F6A3004ACA67 /* BarcodeScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6F4FD32BA3F6A3004ACA67 /* BarcodeScannerViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		CE6F4FC92BA29065004ACA67 /* BarcodeScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerView.swift; sourceTree = "<group>"; };
 		CE6F4FCB2BA29465004ACA67 /* ScannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerVC.swift; sourceTree = "<group>"; };
 		CE6F4FCD2BA2E6F8004ACA67 /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
+		CE6F4FD12BA3F652004ACA67 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		CE6F4FD32BA3F6A3004ACA67 /* BarcodeScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,14 +106,15 @@
 		CE6F4F992BA29019004ACA67 /* BarcodeScanner */ = {
 			isa = PBXGroup;
 			children = (
+				CE6F4FD62BA3FA0B004ACA67 /* Utilities */,
+				CE6F4FD52BA3F9E6004ACA67 /* ViewModels */,
+				CE6F4FD02BA3E7D9004ACA67 /* ViewControllers */,
+				CE6F4FCF2BA3E7D1004ACA67 /* Views */,
 				CE6F4F9A2BA29019004ACA67 /* BarcodeScannerApp.swift */,
 				CE6F4F9E2BA2901B004ACA67 /* Assets.xcassets */,
 				CE6F4FA32BA2901B004ACA67 /* Persistence.swift */,
 				CE6F4FA52BA2901B004ACA67 /* BarcodeScanner.xcdatamodeld */,
 				CE6F4FA02BA2901B004ACA67 /* Preview Content */,
-				CE6F4FC92BA29065004ACA67 /* BarcodeScannerView.swift */,
-				CE6F4FCB2BA29465004ACA67 /* ScannerVC.swift */,
-				CE6F4FCD2BA2E6F8004ACA67 /* ScannerView.swift */,
 			);
 			path = BarcodeScanner;
 			sourceTree = "<group>";
@@ -137,6 +142,39 @@
 				CE6F4FBC2BA2901B004ACA67 /* BarcodeScannerUITestsLaunchTests.swift */,
 			);
 			path = BarcodeScannerUITests;
+			sourceTree = "<group>";
+		};
+		CE6F4FCF2BA3E7D1004ACA67 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE6F4FCD2BA2E6F8004ACA67 /* ScannerView.swift */,
+				CE6F4FC92BA29065004ACA67 /* BarcodeScannerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CE6F4FD02BA3E7D9004ACA67 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE6F4FCB2BA29465004ACA67 /* ScannerVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CE6F4FD52BA3F9E6004ACA67 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CE6F4FD32BA3F6A3004ACA67 /* BarcodeScannerViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CE6F4FD62BA3FA0B004ACA67 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CE6F4FD12BA3F652004ACA67 /* Alert.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +313,8 @@
 				CE6F4FCE2BA2E6F8004ACA67 /* ScannerView.swift in Sources */,
 				CE6F4FA72BA2901B004ACA67 /* BarcodeScanner.xcdatamodeld in Sources */,
 				CE6F4F9B2BA29019004ACA67 /* BarcodeScannerApp.swift in Sources */,
+				CE6F4FD42BA3F6A3004ACA67 /* BarcodeScannerViewModel.swift in Sources */,
+				CE6F4FD22BA3F653004ACA67 /* Alert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
